@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+    <a href="{% url 'profile:companyperson' %}">Go Back</a>
+	<button><a href="{% url 'profile:logout_view' %}">Log out</a></button>
+	<br>
+    <h1>CANDIDATES DETAILS</h1>
+
+    <form  method="POST" action="{% url 'profile:def_c' %}">
+        {% csrf_token %}
+
+        <label for="quantity">GPA (Filter):</label>
+        <input type="float" id="quantity" name="quantity" min="1.0" max="10.0">
+        
+
+        <label for="c">FILTER:</label>
+        <select name="c" id="cars">
+          <option value="0">CSE</option>
+          <option value="1">ECE</option>
+          <option value="2">All</option>
+        </select>
+        <br><br>
+        <input type="submit" value="GO">
+    </form>
+
+
+    {% for student in students %}
+    <p><h5>MIS : {{ student.mis }}</h5></p>
+    <p><h5>Name : {{ student.name }}</h5></p>
+    <p><h5>Email : {{ student.email }}</h5></p>
+    {% if  student.gender == 0 %}
+    <p><h5>Gender : Male</h5></p>    
+    {% else %}
+    <p><h5>Gender : Female</h5></p>
+    {% endif %}
+    
+    <p><h2>CGPA : {{ student.gpa }}</h2></p>
+
+    {% if  student.stream == 0 %}
+    <p><h3>DEPARTMENT : CSE</h3></p>
+    {% else %}
+    <p><h3>DEPARTMENT : ECE</h3></p>
+    {% endif %}
+    
+    <hr> 
+
+    {% empty %}
+    <p>{{ message }}</p>
+    {% endfor %}
+
+</body>
+</html>

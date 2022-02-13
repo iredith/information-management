@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Faculty In-charge</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'profile_student/default/yyy.css'%}">
+</head>
+<body>
+	<a href="{% url 'profile:def_index' %}">Go Back</a>
+	<button><a href="{% url 'profile:logout_view' %}">Log out</a></button>
+	<br>
+	<div>
+	<table style="width:100%">
+	  <tr>
+	    <th>Clubs</th>
+	    <th>Student In-charge</th>
+	    <th>Contact</th>
+	  </tr>
+	  <tr>
+	    <td><strong>Literature Club</strong></td>
+	    <td>Uphar Bhasin</td>
+	    <td>+91 7908391939 <br><br>bhasin.uphar@iiitp.ac.in</td>
+	  </tr>
+		<tr>
+	    <td><strong>Art and Craft</strong></td>
+	    <td>Vishal Pathak</td>
+	    <td>+91 7906159298 <br><br> vpathak@iiitp.ac.in</td>
+	  </tr>
+		<tr>
+	    <td><strong>Dance Club</strong></td>
+	    <td>Munish Bhardwaj</td>
+	    <td>+91 6814763148 <br><br> bhardwajmunish@iiipt.ac.in</td>
+	  </tr>
+		<tr>
+	    <td><strong>Drama Club</strong></td>
+	    <td>Vishal Vaibhav </td>
+	    <td>+91 7566988212 <br><br> vvs@iiitp.ac.in</td>
+	  </tr>
+		<tr>
+	    <td><strong>Sports & Gymkhana</strong></td>
+	    <td>Amit Jangid</td>
+	    <td>+91 8456891939 <br><br>amitjangid7@iiitp.ac.in</td>
+	  </tr>
+		<tr>
+	    <td><strong>General Secretary</strong></td>
+	    <td>Ayush Yaduvanshi</td>
+	    <td>+91 7566988212 <br><br> aayushy@iiitp.ac.in</td>
+	  </tr>
+		<tr>
+	    <td><strong>Robotics</strong></td>
+	    <td>Prateek Gupta</td>
+	    <td>+91 7569968423 <br><br>pg123@iiitp.ac.in</td>
+	  </tr>
+	</table>
+	</div>
+</body>
+</html>

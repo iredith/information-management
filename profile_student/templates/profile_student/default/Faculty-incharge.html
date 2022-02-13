@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Faculty In-charge</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'profile_student/default/xxx.css'%}">
+</head>
+<body>
+	<a href="{% url 'profile:def_index' %}">Go Back</a>
+	<button><a href="{% url 'profile:logout_view' %}">Log out</a></button>
+	<br>
+	<div>
+
+	<table style="width:100%">
+	  <tr>
+	    <th>Department</th>
+	    <th>Faculty In-charge</th>
+	    <th>Contact</th>
+	  </tr>
+	  <tr>
+	    <td><strong>Academics</strong></td>
+	    <td>Dr Sanjeev Sharma</td>
+	    <td>+91 7905391939 <br><br>sanjeevsharma@iiitp.ac.in</td>
+	  </tr>
+		<tr>
+	    <td><strong>Administration</strong></td>
+	    <td>Dr Darshan V Medhane</td>
+	    <td>+91 7906159298 <br><br> darshanmv@iiitp.ac.in</td>
+	  </tr>
+		<tr>
+	    <td><strong>HOD (CSE)</strong></td>
+	    <td>Dr Tanmoy Hazra</td>
+	    <td>+91 6814763148 <br><br> tanmoyhazra@iiipt.ac.in</td>
+	  </tr>
+		<tr>
+	    <td><strong>HOD (ECE)</strong></td>
+	    <td>Dr Nagendra kushwaha</td>
+	    <td>+91 7566988212 <br><br> nagendra@iiitp.ac.in</td>
+	  </tr>
+		<tr>
+	    <td><strong>Sports & Gymkhana</strong></td>
+	    <td>Dr Bhupinder</td>
+	    <td>+91 7905391939 <br><br>sanjeevsharma@iiitp.ac.in</td>
+	  </tr>
+		<tr>
+	    <td><strong>Hostel</strong></td>
+	    <td>Dr Nagendra kushwaha</td>
+	    <td>+91 7566988212 <br><br> nagendra@iiitp.ac.in</td>
+	  </tr>
+		<tr>
+	    <td><strong>Library</strong></td>
+	    <td>Dr SP Gudi</td>
+	    <td>+91 7569968423 <br><br>spgudi123@iiitp.ac.in</td>
+	  </tr>
+	</table>
+	</div>
+</body>
+</html>

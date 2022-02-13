@@ -1,0 +1,249 @@
+{% load static %}
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+
+	<head>
+		<title>Team 13</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="{% static 'profile_student/default/css/style.css'%}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="{% static 'profile_student/default/assets/css/main.css'%}" />
+	</head>
+
+	<body class="landing is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1><a href="index.html">welcome</a> by Team 13</h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="{% url 'profile:index' %}">Home</a></li>
+							<li>
+								<a href="#" class="icon solid fa-angle-down">Layouts</a>
+								<ul>
+									<li><a href="https://www.iiitp.ac.in/node/256">Directors word</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									<!--<li><a href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Webmail</a></li>  -->
+									
+								</ul>
+							</li>
+							<li><a href="{%url 'profile:fac_in'%}" class="button">Faculty Incharge</a></li>
+							<li><a href="{%url 'profile:stu_in'%}" class="button">Student Incharge</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+					<h2>Indian Institute of Information Technology, Pune</h2>
+					<p>IIITP family welcomes on board </p>
+					<ul class="actions special">
+						<li><a href="../default/display/display.html" class="button primary">Student Profile</a></li>
+						<li><a href="job/jobpro/job1.html" class="button">CRDC PLACEMENT</a></li>
+					</ul>
+				</section>
+
+			<!-- Main -->
+					<section id="main" class="container">
+
+					<section class="box special">
+						<header class="major">
+							<strong><i><h2>Hey Peeps !
+							<br />
+							want to explore more ?</h2>
+							<p>To address the challenges faced by the Indian IT industry and growth of the domestic IT market, the Ministry of Human Resource Development (MHRD), Government of India intends to establish twenty Indian Institutes of Information Technology(IIIT), on a Not-for-profit Public Private Partnership (N-PPP) basis. The partners in setting up the IllTs would be the Ministry of Human Resource Development (MHRD), Governments of the respective States where each lllT will be established, and the industry.</p></strong></i>
+						</header>
+						<!--<span class="image featured"><img src="images/pic01.jpg" alt="" /></span>-->
+					</section>
+
+					<section class="box special features">
+						<!--<div class="features-row">
+							<section>
+								<span class="icon solid major fa-bolt accent2"></span>
+								<h3>STUDENT LIFE</h3>
+								<p>IIITP follows international curriculum and course it provide is up to date not like any other IIITs and IITs. And encourage students to think out of the box. It has several clubs that help the students to grow their domain in the fields of Tech, Art, Culture and Sportsmanship. Having the young minds to be prepared to take up social challenges,inculcating them with leadership skills and entreprenuer skills.</p>
+							
+						</div>  -->
+						<div class="features-row">
+							<section>
+								<a><i class="fa-3x fa fa-desktop" aria-hidden="true"></i></a>
+								<!--<span class="icon solid major fa-cloud accent4"></span>-->
+								<h3><strong><i>Computer Science Engineering</h3></strong></i>
+								<p>The Institute provides all the three degrees B.Tech , M.Tech and PhD under department of Computer Science. The first of B.Tech started in 2016 , whereas M.Tech and PhD batches started in 2019.</p>
+							</section>
+							<section>
+								<a><i class="fa-3x fa fa-microchip" aria-hidden="true"></i></a>
+								<h3><strong><i>Electronics and Communication Engineering</h3></strong></i>
+								<p>The Institute provides all the three degrees B.Tech , M.Tech and PhD under department of Electronics and Communication. The first of B.Tech started in 2016 , whereas M.Tech and PhD batches started in 2019...</p>
+							</section>
+						</div>
+					</section>
+
+                    <section class="box special">
+						<h2><strong><i>CLUBS & SOCITIES
+							<br />
+							</h2>
+							<p>A world outside classroom</p></strong></i>
+							
+						</header>
+			
+					</section>
+
+
+
+
+
+
+
+
+
+					<div class="row">
+						<div class="col-6 col-12-narrower">
+
+							<section class="box special">
+								<span class="image featured"><img src="{% static 'profile_student/default/images/pic02.jpg'%}" alt="" /></span>
+								<h3>Bit legon</h3>
+								<p>Elite Programming Club.</p>
+								<ul class="actions special">
+									<li><a href="https://linktr.ee/bitlegion" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+
+						</div>
+						<div class="col-6 col-12-narrower">
+
+							<section class="box special">
+								<span class="image featured"><img src="{% static 'profile_student/default/images/1.jpg'%}" alt="" /></span>
+								<h3>ABHINAY </h3>
+								<p>The drama society of iiitp .</p>
+								<ul class="actions special">
+									<li><a href="https://www.instagram.com/abhinay.iiitp/" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+
+							</div>
+						<div class="col-6 col-12-narrower">
+
+							<section class="box special">
+								<span class="image featured"><img src="{% static 'profile_student/default/images/vc1.jpg'%}" alt="" /></span>
+								<h3>Vanity Crew</h3>
+								<p>welcome to official dance club .</p>
+								<ul class="actions special">
+									<li><a href="#" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+
+						</div>
+                             <div class="col-6 col-12-narrower">
+
+							<section class="box special">
+								<span class="image featured"><img src="{% static 'profile_student/default/images/eklavya.jpg'%}" alt="" /></span>
+								<h3>EKLAVYA</h3>
+								<p>Official sport fest of iiitp </p>
+								<ul class="actions special">
+									<li><a href="https://www.instagram.com/eklavya_iiitp/" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+
+							</div>
+
+
+					</div>
+
+				</section>
+
+
+
+
+
+
+
+
+
+
+
+
+  <body>
+    <h3>EXplore IIITP</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+  </body>
+
+
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.388671415386!2d73.90263635000368!3d18.420653776969576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b405ac494d45%3A0xc302bc70566bb0f8!2sIndian%20Institute%20of%20Information%20Technology%2C%20Pune!5e0!3m2!1sen!2sin!4v1602401053720!5m2!1sen!2sin" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- CTA 
+				<section id="cta">
+
+					<h2>Sign up </h2>
+					<p>We welcome you to our family.</p>
+
+					<form>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-8 col-12-mobilep">
+								<input type="email" name="email" id="email" placeholder="Email Address" />
+							</div>
+							<div class="col-4 col-12-mobilep">
+								<input type="submit" value="Sign Up" class="fit" />
+							</div>
+						</div>
+					</form>
+
+				</section>  -->
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Designed by: <a href="http://html5up.net">Amit meena , Ajay , Bhupendra , Mihir</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'profile_student/default/assets/js/jquery.min.js'%}"></script>
+			<script src="{% static 'profile_student/default/assets/js/jquery.dropotron.min.js'%}"></script>
+			<script src="{% static 'profile_student/default/assets/js/jquery.scrollex.min.js'%}"></script>
+			<script src="{% static 'profile_student/default/assets/js/browser.min.js'%}"></script>
+			<script src="{% static 'profile_student/default/assets/js/breakpoints.min.js'%}"></script>
+			<script src="{% static 'profile_student/default/assets/js/util.js'%}"></script>
+			<script src="{% static 'profile_student/default/assets/js/main.js'%}"></script>
+
+	</body>
+</html>
